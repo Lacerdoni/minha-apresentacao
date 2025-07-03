@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #ECDFCC;
+    --cor2: #697565;
+    --cor3: #3C3D37;
+    --cor4: #1E201E;
+    --cor5: #0E0E0E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: var(--cor1);
+}
+
+#header_home{
+    background-color: var(--cor5);
+    padding-bottom: 2%;
+}
+
+#header_home h1{
+    color: var(--cor1);
+    text-shadow: 1px 1px 1px black;
+    padding-top: 3%;
+    font-size: 3rem;
+}
+
+.infos_do_header{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    padding: 0% 10%;
+}
+
+.texto_e_links{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: space-around;
+}
+
+header  p {
+    margin: 8%;
+    font-size: 1.2rem;
+    color: var(--cor1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.618);
+    width: 60%;
+    text-align: justify;
+}
+
+.links{
+    margin-bottom: 1.5%;
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+    gap: 50%;
+
+}
+
+header a {
+    padding: 10% 35%;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.576);
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+header a:hover {
+    background-color: var(--cor3);
+}
+
+
+.foto-de-perfil{
+    width: 35%;
+    border-radius: 50%;
+}
+
+main h1 {
+    margin: 6%;
+}
+
+.social_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    
+
+}
+
+main li{
+    padding: 2% 3%;
+    background-color: var(--cor2);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+main a{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+}
+
+main a:visited{
+    color: black;
+}
+
+footer{
+    margin-top: 5%;
+    padding: 3%;
+    font-size: 1.5rem;
+    background-color: var(--cor2);
+}
+
+@media(max-width: 550px){
+
+     .infos_do_header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header p {
+        text-align: center;
+        width: 80%;
+    }
+
+    .texto_e_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .links{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .links ul {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+     
+    }
+
+    header a{
+        font-size: 1.2rem;
+    }
+
+    .foto-de-perfil{
+        border-radius: 0%;
+        width: 50%;
+    }
+}
